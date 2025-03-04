@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout- Zabtronics</title>
+    <link rel="stylesheet" href="src/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body>
+    <div class="navbar">
+      <a href="index.html"><h2>Zabtronics</h2></a>
+      <a href="cart.html"
+        ><div class="cart">
+          <i class="bi bi-cart2"></i>
+          <div id="cartAmount" class="cartAmount">0</div>
+        </div></a
+      >
+    </div>
+    <div class="form">
+      <form>
+        <label for="fname">First Name:</label>
+        <input
+          style="padding: 5px 5px"
+          type="text"
+          id="fname"
+          placeholder="William"
+        /><br /><br />
+        <label for="lname">Last Name:</label>
+        <input
+          style="padding: 5px 5px"
+          type="text"
+          id="lname"
+          placeholder="Ruto"
+        />
+        <br />
+        <br />
+        <label for="email">Email:</label>
+        <input
+          style="padding: 5px 5px"
+          type="email"
+          id="email"
+          placeholder="wiliamruto@gmail.com"
+        />
+        <br />
+        <br />
+        <label for="phone">Phone Number: </label>
+        <input
+          style="padding: 5px 5px"
+          type="text"
+          id="phone"
+          placeholder="0712345678"
+        />
+        <br />
+        <br />
+        <label for="location">Location:</label>
+        <select name="" id="location" style="padding: 5px 0px">
+          <option value="select">select location</option>
+          <option value="kakamega">Kakamega</option>
+          <option value="eldoret">Eldoret</option>
+          <option value="nairobi">Nairobi</option>
+          <option value="kisumu">Kisumu</option>
+          <option value="mombasa">Mombasa</option>
+          <option value="busia">Busia</option>
+        </select>
+        <br />
+        <br />
+        <label for="">Payment Method:</label>
+        <input name="btn" type="radio" id="pay-after" />
+        <label for="pay-after" style="margin-right: 20px"
+          >Pay After Delivery</label
+        >
+        <input name="btn" type="radio" id="pay-now" />
+        <label for="pay-now">Pay Now(M-Pesa)</label><br />
+        <br />
+        <input style="padding: 5px 10px; font-weight: 600" type="submit" />
+      </form>
+    </div>
+
+    <script src="src/cart.js"></script>
+  </body>
+</html>
